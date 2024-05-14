@@ -22,4 +22,7 @@
    Private Key file format: select .pem
    Create Key Pair: Click on create key pair button to generate .pem file. .pem file will be automatically download.
 3. Important Note: Save the .pem file in secure and accessible place in computer. Because it will be use in future.
+4. Network Settings: check the Allow ssh trafic here you can set ip address, check the Allow Https traffic from internet, Check the Allow http traffic from internet
+5. Click on Lounch Instance button from right buttom corner
+6. From left sidebar click on "Instances" and check now. Click on Instance Id and check all details.
    
