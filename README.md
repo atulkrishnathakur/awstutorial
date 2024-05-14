@@ -26,3 +26,13 @@
 5. Click on Lounch Instance button from right buttom corner
 6. From left sidebar click on "Instances" and check now. Click on Instance Id and check all details.
    
+# How to install putty in ubuntu
+install putty
+```
+sudo apt install putty
+
+```
+run putty command to open putty screen
+```
+atul@atul-Lenovo-G570:~$ putty
+```
