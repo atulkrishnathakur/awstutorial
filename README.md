@@ -34,5 +34,13 @@ sudo apt install putty
 ```
 run putty command to open putty screen
 ```
-atul@atul-Lenovo-G570:~$ putty
+$ putty
 ```
+# How to generage .ppk file
+run the below command 
+$ sudo puttygen /path/filename.pem -o /path/file.ppk -O private
+
+```
+$ sudo puttygen /home/atul/myaws/mytestserver.pem -o /home/atul/myaws/mytestserver.ppk -O private
+```
+
