@@ -61,3 +61,24 @@ $ putty
 - Click on Open
 - A new terminal(cmd) screen will be open
 - login as: ubuntu (note: ubuntu is the default user)
+
+# how to connect filezila
+- intall filezila
+- open the filezila
+- Go to Edit > Settings
+- A new screen will be open
+- go to Conection > FTP
+- Click on SFTP
+- Click on Add Key button
+- choose .ppk file
+- Click on Ok button
+- Go to file > Site Manager
+- A new Screen will be open
+- Click on New Site button
+- In General tab
+  -Protocol: SFTP
+  -Host: Host name or public IP address
+  -Port:22
+  -User: ubuntu (ubuntu is default user)
+  -Click on Connect button
+-Now you will see connetion is successfull
