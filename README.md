@@ -96,4 +96,5 @@ $ putty
   ```
 - Enter the public IP address in google chrome browser. You will see apache default page
 - Now you /var/www directory is available
+- Now /var/www/html directory is available
     
