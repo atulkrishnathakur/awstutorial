@@ -94,6 +94,6 @@ $ putty
   ```
   :~$ sudo systemctl status apache2
   ```
-  - Enter the public IP address in google chrome browser. You will see apache default page
-  - Now you /var/www directory is available
+- Enter the public IP address in google chrome browser. You will see apache default page
+- Now you /var/www directory is available
     
