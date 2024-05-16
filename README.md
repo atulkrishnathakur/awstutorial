@@ -82,3 +82,18 @@ $ putty
   -User: ubuntu (ubuntu is default user)
   -Click on Connect button
 -Now you will see connetion is successfull
+
+# how to install apache
+- before apache installation www directory not available in /var
+- run the below cammand to install apache
+  ```
+  :~$ sudo apt install apache2
+  # Do you want to continue?: Y
+  ```
+  -check the apache status
+  ```
+  :~$ sudo systemctl status apache2
+  ```
+  - Enter the public IP address in google chrome browser. You will see apache default page
+  - Now you /var/www directory is available
+    
