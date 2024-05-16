@@ -32,10 +32,7 @@ install putty
 sudo apt install putty
 
 ```
-run putty command to open putty screen
-```
-$ putty
-```
+
 # How to generage .ppk file
 run the below command 
 $ sudo puttygen /path/filename.pem -o /path/file.ppk -O private
@@ -43,4 +40,24 @@ $ sudo puttygen /path/filename.pem -o /path/file.ppk -O private
 ```
 $ sudo puttygen /home/atul/myaws/mytestserver.pem -o /home/atul/myaws/mytestserver.ppk -O private
 ```
+# How to open putty
 
+- run putty command to open putty screen
+```
+$ putty
+```
+- Click on session
+- Host name(or IP address): **.**.**.** (Note:public IP address of Instance)
+- Enter port: 22
+- Connection Type: SSH
+- Go to Connection > SSH > Auth
+- Click on Auth and browse .ppk file
+- Go to Window > Fonts
+- Click on Fonts
+- Font use for ordinary text : freeMono (Note: choose font)
+- Font use for Wide(CJK) text: freeMono
+- Font used for bolded text: freeMono
+- Font used for bold wide text: freeMono
+- Click on Open
+- A new terminal(cmd) screen will be open
+- login as: ubuntu (note: ubuntu is the default user)
