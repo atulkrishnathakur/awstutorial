@@ -128,7 +128,7 @@ sudo apt install libapache2-mod-php8.3
   ```
 - To enable PHP 8.3, you may need to disable the previous version (if any) and enable the new one:
   ```
-sudo a2dismod php7.x # Replace x with your specific version lile php7.3
-sudo a2enmod php8.3
-sudo systemctl restart apache2
+  sudo a2dismod php7.x # Replace x with your specific version lile php7.3
+  sudo a2enmod php8.3
+  sudo systemctl restart apache2
   ```
