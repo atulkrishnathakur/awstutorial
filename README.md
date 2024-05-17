@@ -98,3 +98,22 @@ $ putty
 - Now you /var/www directory is available
 - Now /var/www/html directory is available
     
+# How to install php latest version
+- Add the ppa:ondrej/php repository to get the latest PHP versions:
+```
+sudo add-apt-repository ppa:ondrej/php -y
+```
+- Install PHP 8.3 along with popularly used extensions:
+```
+sudo apt install php8.3-cli 
+sudo apt php8.3-common 
+sudo apt php8.3-mbstring 
+sudo apt php8.3-gd 
+sudo apt php8.3-intl 
+sudo apt php8.3-xml 
+sudo apt php8.3-mysql 
+sudo apt php8.3-zip 
+sudo apt php8.3-curl 
+sudo apt php8.3-tidy 
+sudo apt php8.3-imagick
+```
