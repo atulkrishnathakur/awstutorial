@@ -117,3 +117,18 @@ sudo apt php8.3-curl
 sudo apt php8.3-tidy 
 sudo apt php8.3-imagick
 ```
+# Install the php8.3 configuration for apache
+- If you’re using Apache as your web server, install the following package:
+```
+sudo apt install libapache2-mod-php8.3
+```
+- Restart apache to apply changes
+  ```
+  sudo systemctl restart apache2
+  ```
+- To enable PHP 8.3, you may need to disable the previous version (if any) and enable the new one:
+  ```
+sudo a2dismod php7.x # Replace x with your specific version lile php7.3
+sudo a2enmod php8.3
+sudo systemctl restart apache2
+  ```
