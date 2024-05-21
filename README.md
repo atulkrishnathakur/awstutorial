@@ -288,3 +288,4 @@ Note: use the IAM user access key and secrete access key for aws sdk
    ```
    sudo systemctl restart apache2
    ```
+6. Now open http://54.205.0.23/phpmyadmin/index.php in browser
