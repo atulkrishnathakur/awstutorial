@@ -145,6 +145,7 @@ sudo apt install libapache2-mod-php8.3
    
    ```
 4. change as bellow in mytestphp.conf file. copy the public ip address from aws ec2 instance
+   
    ```
    <VirtualHost *:80>
 	# The ServerName directive sets the request scheme, hostname and port that
@@ -175,7 +176,7 @@ sudo apt install libapache2-mod-php8.3
 	# after it has been globally disabled with "a2disconf".
 	#Include conf-available/serve-cgi-bin.conf
 </VirtualHost>
- ```
+```
 
  5. disable the 000-default.conf file
     
