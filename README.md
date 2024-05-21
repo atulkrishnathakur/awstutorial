@@ -176,16 +176,17 @@ sudo apt install libapache2-mod-php8.3
 	#Include conf-available/serve-cgi-bin.conf
 </VirtualHost>
    ```
- - disable the 000-default.conf file
+ 5. disable the 000-default.conf file
  ```
  a2dissite 000-default.conf
  ```
- - enable the mytestphp.conf
+ 6. enable the mytestphp.conf
  ```
  a2ensite mytestphp.conf
  ```   
- - restart the apache2 again
+ 7. restart the apache2 again
+ 
  ```
  systemctl restart apache2
  ```
- - now open the http://54.205.0.23 in browser and test
+ 8. now open the http://54.205.0.23 in browser and test
