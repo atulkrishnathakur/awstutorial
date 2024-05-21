@@ -239,3 +239,26 @@ Note: use the IAM user access key and secrete access key for aws sdk
 14. Set description tag: It is optional so no need tag name
 15. click on "create access key"
 16. copy the access key and secrete access key Or download csv file for access key and click on done button
+
+# Create RDS
+1. go to aws console home page
+2. click on RDS
+3. Click on Databases from leftside bar
+4. Click on "Create Database" button
+5. Create database
+   - Choose a database creation method : Standard create
+   - Engine options : MySQL
+   - Engine Version: Choose engine version
+   - Templates: Free Tier
+6. Settings
+   - DB instance identifier: type rds instance name like mssdytdaestpdahdfadpdb
+   - Credentials management: self managed
+   - Check the Auto generate password if you want to generate password by aws
+7. Connectivity
+   - Compute resource: Don’t connect to an EC2 compute resource
+   - Public access: yes
+8. Additional configuration:
+   - Database port: 3306
+9. Database authentication
+    - Database authentication options: Password authentication
+10. Click on "Create Database" button
