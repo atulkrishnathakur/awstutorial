@@ -194,3 +194,24 @@ sudo apt install libapache2-mod-php8.3
  systemctl restart apache2
  ```
  8. now open the http://54.205.0.23 in browser and test
+
+# S3 bucket configuration
+1. go to aws console home page
+2. click on s3
+3. Click on create bucket button
+4. General configuration
+   - Bucket Type: General purpose
+   - Bucket name: tes***tph*pb*u
+5. Object Ownership
+   - ACLs disabled (recommended): select radio button
+6. Block Public Access settings for this bucket: Block all public access
+7. Bucket Versioning: Disable
+8. Default encryption
+   - Encryption type: Server-side encryption with Amazon S3 managed keys (SSE-S3)
+   - Bucket Key: Enable
+9. Advanced settings
+   - Object Lock: Disable
+10. Click on create bucket button
+11. Go to aws console home page
+12. click on s3
+13. click on your s3 bucket name now you can upload files in s3 bucket
