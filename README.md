@@ -175,12 +175,15 @@ sudo apt install libapache2-mod-php8.3
 	# after it has been globally disabled with "a2disconf".
 	#Include conf-available/serve-cgi-bin.conf
 </VirtualHost>
-   ```
+ ```
+
  5. disable the 000-default.conf file
+    
  ```
  a2dissite 000-default.conf
  ```
  6. enable the mytestphp.conf
+    
  ```
  a2ensite mytestphp.conf
  ```   
