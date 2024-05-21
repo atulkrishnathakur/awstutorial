@@ -267,3 +267,9 @@ Note: use the IAM user access key and secrete access key for aws sdk
 12. click on RDS
 13. Click on Databases from leftside bar
 14. Click on Connectivity and security tab. Now you can copy the rds endpoint and port 
+
+# Install Composer
+1. Install composer
+   ```
+   sudo apt install composer
+   ```
