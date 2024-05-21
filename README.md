@@ -132,3 +132,60 @@ sudo apt install libapache2-mod-php8.3
   sudo a2enmod php8.3
   sudo systemctl restart apache2
   ```
+# Configure the public ip address with apache
+1. go to /etc/apache2/sites-available
+2. run the bellow command to copy cofiguration in a new file. cp command used to copy in a new file. If file not available then create file then copy data
+   ```
+    cp 000-default.conf mytestphp.conf
+   ```
+3. now run the vim command to edit file
+   ```
+   vim mytestphp.conf
+   # press insert key
+   
+   ```
+4. change as bellow in mytestphp.conf file. copy the public ip address from aws ec2 instance
+   ```
+   <VirtualHost *:80>
+	# The ServerName directive sets the request scheme, hostname and port that
+	# the server uses to identify itself. This is used when creating
+	# redirection URLs. In the context of virtual hosts, the ServerName
+	# specifies what hostname must appear in the request's Host: header to
+	# match this virtual host. For the default virtual host (this file) this
+	# value is not decisive as it is used as a last resort host regardless.
+	# However, you must set it for any further virtual host explicitly.
+	#ServerName www.example.com
+
+	ServerName 54.205.0.23
+	DocumentRoot /var/www/mytestphp
+
+	# Available loglevels: trace8, ..., trace1, debug, info, notice, warn,
+	# error, crit, alert, emerg.
+	# It is also possible to configure the loglevel for particular
+	# modules, e.g.
+	#LogLevel info ssl:warn
+
+	ErrorLog ${APACHE_LOG_DIR}/error.log
+	CustomLog ${APACHE_LOG_DIR}/access.log combined
+
+	# For most configuration files from conf-available/, which are
+	# enabled or disabled at a global level, it is possible to
+	# include a line for only one particular virtual host. For example the
+	# following line enables the CGI configuration for this host only
+	# after it has been globally disabled with "a2disconf".
+	#Include conf-available/serve-cgi-bin.conf
+</VirtualHost>
+   ```
+ - disable the 000-default.conf file
+ ```
+ a2dissite 000-default.conf
+ ```
+ - enable the mytestphp.conf
+ ```
+ a2ensite mytestphp.conf
+ ```   
+ - restart the apache2 again
+ ```
+ systemctl restart apache2
+ ```
+ - now open the http://54.205.0.23 in browser and test
