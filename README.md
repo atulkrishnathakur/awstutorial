@@ -215,6 +215,7 @@ sudo apt install libapache2-mod-php8.3
 11. Go to aws console home page
 12. click on s3
 13. click on your s3 bucket name now you can upload files in s3 bucket
+Note: use the IAM user access key and secrete access key for aws sdk
 
 # Create IAM user
 1. go to aws console home page
