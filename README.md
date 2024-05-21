@@ -273,3 +273,18 @@ Note: use the IAM user access key and secrete access key for aws sdk
    ```
    sudo apt install composer
    ```
+# Install phpmyadmin
+1. install the phpmyadmin
+   ```
+   sudo apt install phpmyadmin
+   ```
+2. enter value in pop up
+3. edit the /etc/apache2/apache2.conf file
+4. add bellow line at last
+```
+   Include /etc/phpmyadmin/apache.conf
+```
+5. restart apache
+   ```
+   sudo systemctl restart apache2
+   ```
