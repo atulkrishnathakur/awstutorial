@@ -253,7 +253,8 @@ Note: use the IAM user access key and secrete access key for aws sdk
 6. Settings
    - DB instance identifier: type rds instance name like mssdytdaestpdahdfadpdb
    - Credentials management: self managed
-   - Check the Auto generate password if you want to generate password by aws
+   - Master Password: ****
+   - Confirm Master Password:****
 7. Connectivity
    - Compute resource: Don’t connect to an EC2 compute resource
    - Public access: yes
@@ -262,3 +263,7 @@ Note: use the IAM user access key and secrete access key for aws sdk
 9. Database authentication
     - Database authentication options: Password authentication
 10. Click on "Create Database" button
+11. go to aws console home page
+12. click on RDS
+13. Click on Databases from leftside bar
+14. Click on Connectivity and security tab. Now you can copy the rds endpoint and port 
