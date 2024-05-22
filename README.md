@@ -266,8 +266,17 @@ Note: use the IAM user access key and secrete access key for aws sdk
 11. go to aws console home page
 12. click on RDS
 13. Click on Databases from leftside bar
-14. Click on Connectivity and security tab. Now you can copy the rds endpoint and port 
-
+14. Click on Connectivity and security tab. Now you can copy the rds endpoint and port
+15. Click on Connectivity and Security tab. Click on VPC security groups link in security  
+16. A new screen will be open
+17. Click on Security Group Id link
+18. Click on Inbound Rules tab
+19. Click on Edit Inbound Rules
+20. Click on Add Rule button. Search the Mysql in type column dropdown you will found "MYSQL/Aurora". You will see it automatically take 3306 port. You can see port in Port Range column
+21. Select Anywhere-IPv4 from dropdown in source column
+22. Again click on Add rule and search MYSQL in dropdown. Again Select Anywhere-IPv6
+23. click on Save Rules button
+    
 # Install Composer
 1. Install composer
    ```
