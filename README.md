@@ -312,7 +312,7 @@ Note: use the IAM user access key and secrete access key for aws sdk
 ```
 5. go to /etc/phpmyadmin and open the config.inc.php file. edit below code in this file
    
-   ```
+```
    /*
  * End of servers configuration
  */
@@ -321,9 +321,10 @@ $cfg['Servers'][$i]['host'] = 'myphptestrds.ctk6csmmwzzi.us-east-1.rds.amazonaws
 $cfg['Servers'][$i]['port'] = '3306';
 $cfg['Servers'][$i]['user'] = 'myphptestrdsfdadfauser';
 $cfg['Servers'][$i]['password'] = '1s2s3dfadfa45ydiaydfiadf678dfadfa9';
-   ```
-5. restart apache
+```
+6. restart apache
    ```
    sudo systemctl restart apache2
    ```
-6. Now open http://54.205.0.23/phpmyadmin/index.php in browser
+7. Now open http://54.205.0.23/phpmyadmin/index.php in browser
+8. endter user and password and select from server choice dropdown
