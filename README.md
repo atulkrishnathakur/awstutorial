@@ -257,7 +257,7 @@ Note: use the IAM user access key and secrete access key for aws sdk
    - Confirm Master Password:****
 7. Connectivity
    - Compute resource: Don’t connect to an EC2 compute resource
-   - Public access: yes
+   - Public access: No
 8. Additional configuration:
    - Database port: 3306
 9. Database authentication
