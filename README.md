@@ -276,6 +276,11 @@ Note: use the IAM user access key and secrete access key for aws sdk
 21. Select Anywhere-IPv4 from dropdown in source column
 22. Again click on Add rule and search MYSQL in dropdown. Again Select Anywhere-IPv6
 23. click on Save Rules button
+24. Connect the ec2 instance from RDS
+    - Go to ec2 instance dashboard and click on instance ID link
+    - Click on Connect
+    - bydefault already options will be selected
+    - Click on Connect
     
 # Install Composer
 1. Install composer
