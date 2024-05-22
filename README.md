@@ -281,7 +281,19 @@ Note: use the IAM user access key and secrete access key for aws sdk
     - Click on Connect
     - bydefault already options will be selected
     - Click on Connect
-    
+# Install MySQL Client
+1. run mysql client
+   ```
+   sudo apt install mysql-client
+   ```
+# Run rds mysql in terminal
+1. connect putty and open terminal
+2. run bellow command
+   ```
+   mysql -h myphptestrds.ctk6csmmwzzi.us-east-1.rds.amazonaws.com -u mypdadfahptdfafdaestrddds -p
+   # enter rds password
+   ```
+
 # Install Composer
 1. Install composer
    ```
