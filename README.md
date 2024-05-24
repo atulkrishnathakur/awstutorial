@@ -347,4 +347,5 @@ $cfg['Servers'][$i]['password'] = '1s2s3dfadfa45ydiaydfiadf678dfadfa9';
 11. Click on 'Create SMTP Credentials'
     - Create user for SMTP: enter 'User name' like 'ses-smtp-sssddstesdadfatudfadaserssss'
     - Now you will see smtp credentials. You can download .csv file for credentials
+      
 Note: you can see 'ses-smtp-sssddstesdadfatudfadaserssss' user in IAM user list 
