@@ -328,3 +328,23 @@ $cfg['Servers'][$i]['password'] = '1s2s3dfadfa45ydiaydfiadf678dfadfa9';
    ```
 7. Now open http://54.205.0.23/phpmyadmin/index.php in browser
 8. endter user and password and select from server choice dropdown
+
+
+# Amazon SES
+1. Search SES
+2. click on 'Amazon Simple Email Service'
+3. From left sidebar click on Identities
+4. Click on 'Create identity' button
+5. Create Identity:
+   - Identity details: Choose email address in Identity Type
+   - Email Address: enter email address
+   - Click on 'Create indentity' button
+6. Check you email address click on link for verification
+7. Click on 'Indentities' from left sidebar
+8. Click on email address from Identity column
+9. Now you will see 'Identity status verified'
+10. From left sidebar click on 'SMTP settings'
+11. Click on 'Create SMTP Credentials'
+    - Create user for SMTP: enter 'User name' like 'ses-smtp-sssddstesdadfatudfadaserssss'
+    - Now you will see smtp credentials. You can download .csv file for credentials
+Note: you can see 'ses-smtp-sssddstesdadfatudfadaserssss' user in IAM user list 
