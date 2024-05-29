@@ -349,3 +349,16 @@ $cfg['Servers'][$i]['password'] = '1s2s3dfadfa45ydiaydfiadf678dfadfa9';
     - Now you will see smtp credentials. You can download .csv file for credentials
       
 Note: you can see 'ses-smtp-sssddstesdadfatudfadaserssss' user in IAM user list 
+
+
+# Install nginx
+1. install nginx
+   ```
+   sudo intall nginx
+   ```
+2. check status
+   ```
+   systemctl nginx status
+   ```
+   - you will get status fail if apache2 already active 
+   
