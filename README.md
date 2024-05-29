@@ -358,7 +358,7 @@ Note: you can see 'ses-smtp-sssddstesdadfatudfadaserssss' user in IAM user list
    ```
 2. check status
    ```
-   systemctl nginx status
+   systemctl status nginx
    ```
    - you will get status fail if apache2 already active 
    
