@@ -362,3 +362,18 @@ Note: you can see 'ses-smtp-sssddstesdadfatudfadaserssss' user in IAM user list
    ```
    - you will get status fail if apache2 already active 
    
+3. run below cammand to check listen port
+   ```
+   sudo netstat -tunlp
+
+   ```
+   if netstat command not found then install bellow command
+
+   ```
+   sudo apt install net-tools
+   ```
+   Again run
+
+   ```
+      sudo netstat -tunlp
+   ```
