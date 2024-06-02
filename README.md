@@ -426,5 +426,5 @@ Note: you can see 'ses-smtp-sssddstesdadfatudfadaserssss' user in IAM user list
 
 # Install PostgreSQL Client
 ```
-:~$ sudo apt install postgresql-client-common
+:~$ sudo apt install postgresql-client
 ```
