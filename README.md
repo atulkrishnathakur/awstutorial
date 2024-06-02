@@ -428,3 +428,10 @@ Note: you can see 'ses-smtp-sssddstesdadfatudfadaserssss' user in IAM user list
 ```
 :~$ sudo apt install postgresql-client
 ```
+# Run rds PostgresSQL in terminal
+:~$ psql -h <hostname> -U <user>
+```
+:~$ psql -h testpostresql.ctk6csmmwzzi.us-east-1.rds.amazonaws.com -U postgres
+
+```
+
