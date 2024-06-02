@@ -240,7 +240,7 @@ Note: use the IAM user access key and secrete access key for aws sdk
 15. click on "create access key"
 16. copy the access key and secrete access key Or download csv file for access key and click on done button
 
-# Create RDS
+# Create MySQSL RDS
 1. go to aws console home page
 2. click on RDS
 3. Click on Databases from leftside bar
@@ -377,3 +377,49 @@ Note: you can see 'ses-smtp-sssddstesdadfatudfadaserssss' user in IAM user list
    ```
       sudo netstat -tunlp
    ```
+
+# Create MySQSL RDS
+1. go to aws console home page
+2. click on RDS
+3. Click on Databases from leftside bar
+4. Click on "Create Database" button
+5. Create database
+   - Choose a database creation method : Standard create
+   - Engine options : PostgreSQL
+   - Engine Version: Choose engine version
+   - Templates: Free Tier
+6. Settings
+   - DB instance identifier: type rds instance name like testpostresql
+   - Master username: postgres
+   - Credentials management: self managed
+   - Master Password: ****
+   - Confirm Master Password:****
+7. Connectivity
+   - Compute resource: Don’t connect to an EC2 compute resource
+   - Public access: No
+8. Additional configuration:
+   - Database port: 5432
+9. Database authentication
+    - Database authentication options: Password authentication
+10. Additional Configuration
+    - Database options
+      - Initial database name: fprofile_db 
+11. Click on "Create Database" button
+12. go to aws console home page
+13. click on RDS
+14. Click on Databases from leftside bar
+15. Click on Connectivity and security tab. Now you can copy the rds endpoint and port
+16. Click on Connectivity and Security tab. Click on VPC security groups link in security  
+17. A new screen will be open
+18. Click on Security Group Id link
+19. Click on Inbound Rules tab
+20. Click on Edit Inbound Rules
+21. Delete all previous rule. Click on Add Rule button. Search the PostgreSQL in type column dropdown you will found "PostgreSQL". You will see it automatically take 5432 port. You can see port in Port Range column
+22. Select Anywhere-IPv4 from dropdown in source column
+23. Again click on Add rule and search PostgreSQL in dropdown. Again Select Anywhere-IPv6
+24. click on Save Rules button
+25. Connect the ec2 instance from RDS
+    - Go to ec2 instance dashboard and click on instance ID link
+    - Click on Connect
+    - bydefault already options will be selected
+    - Click on Connect
