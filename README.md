@@ -423,3 +423,8 @@ Note: you can see 'ses-smtp-sssddstesdadfatudfadaserssss' user in IAM user list
     - Click on Connect
     - bydefault already options will be selected
     - Click on Connect
+
+# Install PostgreSQL Client
+```
+:~$ sudo apt install postgresql-client-common
+```
