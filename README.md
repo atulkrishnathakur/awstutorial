@@ -377,6 +377,24 @@ Note: you can see 'ses-smtp-sssddstesdadfatudfadaserssss' user in IAM user list
    ```
       sudo netstat -tunlp
    ```
+   After running command you will see open port(used port).
+
+4. change the port in nginx
+chage nginx port in defaut file.<br>
+You can create other file for your project
+
+```
+:/etc/nginx/sites-available$ vim default
+
+```
+Change listen port instead of 80
+```
+   #
+server {
+	listen 8080 default_server;
+	listen [::]:8080 default_server;
+
+```    
 
 # Create MySQSL RDS
 1. go to aws console home page
