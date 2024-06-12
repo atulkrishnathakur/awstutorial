@@ -36,29 +36,31 @@
      - Go to Actions -> Instance Settings -> Edit User Data
      - Add this user data in user data. Before add learn it.
 	
-```
-	Content-Type: multipart/mixed; boundary="//"
-	MIME-Version: 1.0
-	--//
-	Content-Type: text/cloud-config; charset="us-ascii"
-	MIME-Version: 1.0
-	Content-Transfer-Encoding: 7bit
-	Content-Disposition: attachment; filename="cloud-config.txt"
-	#cloud-config
-	cloud_final_modules:
-	- [scripts-user, always]
-	--//
-	Content-Type: text/x-shellscript; charset="us-ascii"
-	MIME-Version: 1.0
-	Content-Transfer-Encoding: 7bit
-	Content-Disposition: attachment; filename="userdata.txt"
-	#!/bin/bash
-	ufw disable
-	iptables -L
-	iptables -F
-	--//
-```
-       
+        ```
+	    Content-Type: multipart/mixed; boundary="//"
+	    MIME-Version: 1.0
+	    --//
+	    Content-Type: text/cloud-config; charset="us-ascii"
+	    MIME-Version: 1.0
+	    Content-Transfer-Encoding: 7bit
+	    Content-Disposition: attachment; filename="cloud-config.txt"
+	    #cloud-config
+	    cloud_final_modules:
+	    - [scripts-user, always]
+	    --//
+	    Content-Type: text/x-shellscript; charset="us-ascii"
+	    MIME-Version: 1.0
+	    Content-Transfer-Encoding: 7bit
+	    Content-Disposition: attachment; filename="userdata.txt"
+	    #!/bin/bash
+	    ufw disable
+	    iptables -L
+	    iptables -F
+	    --//
+        ```
+
+     - Save this and restart instance.
+     - Hopefully now you'll be able to connect with SSH.
       
 # How to install putty in ubuntu
 install putty
