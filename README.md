@@ -58,8 +58,8 @@ iptables -L
 iptables -F
 --//
  ```
-  6. Save this and restart instance.
-  7. Hopefully now you'll be able to connect with SSH.
+    6. Save this and restart instance.
+    7. Hopefully now you'll be able to connect with SSH.
      
 # How to install putty in ubuntu
 install putty
