@@ -60,7 +60,7 @@
         ```
 
      - Save this and restart instance.
-     - Hopefully now you'll be able to connect with SSH.
+     - Hopefully now you'll be able to connect with SSH. Now you can also connect from putty
       
 # How to install putty in ubuntu
 install putty
