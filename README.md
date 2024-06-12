@@ -36,7 +36,7 @@
      - Go to Actions -> Instance Settings -> Edit User Data
      - Add this user data in user data. Before add learn it.
 	
-	 ```
+```
 	Content-Type: multipart/mixed; boundary="//"
 	MIME-Version: 1.0
 	--//
@@ -57,7 +57,8 @@
 	iptables -L
 	iptables -F
 	--//
-	 ```
+```
+       
      - Save this and restart instance.
      - Hopefully now you'll be able to connect with SSH.
       
