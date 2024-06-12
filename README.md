@@ -30,37 +30,37 @@
    - Note: If you enable the ufw then you can not connect the ec2 instance after click on connect button. You will found error like "Failed to connect your instance"
    - Note: If you enable the ufw then you can not connect the ec2 instance using putty 
    - Note: Mostly this happens when you try to enable the ufw. So, follow the below actions to gain access again over SSH
-     1. Go to your AWS EC2 console
-     2. Select your instance that is not able to connect
-     3. Stop your instance
-     4. Go to Actions -> Instance Settings -> Edit User Data
-     5. Add this user data in user data. Before add learn it.
-
- ```
-Content-Type: multipart/mixed; boundary="//"
-MIME-Version: 1.0
---//
-Content-Type: text/cloud-config; charset="us-ascii"
-MIME-Version: 1.0
-Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="cloud-config.txt"
-#cloud-config
-cloud_final_modules:
-- [scripts-user, always]
---//
-Content-Type: text/x-shellscript; charset="us-ascii"
-MIME-Version: 1.0
-Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename="userdata.txt"
-#!/bin/bash
-ufw disable
-iptables -L
-iptables -F
---//
- ```
-    6. Save this and restart instance.
-    7. Hopefully now you'll be able to connect with SSH.
-     
+     - Go to your AWS EC2 console
+     - Select your instance that is not able to connect
+     - Stop your instance
+     - Go to Actions -> Instance Settings -> Edit User Data
+     - Add this user data in user data. Before add learn it.
+	
+	 ```
+	Content-Type: multipart/mixed; boundary="//"
+	MIME-Version: 1.0
+	--//
+	Content-Type: text/cloud-config; charset="us-ascii"
+	MIME-Version: 1.0
+	Content-Transfer-Encoding: 7bit
+	Content-Disposition: attachment; filename="cloud-config.txt"
+	#cloud-config
+	cloud_final_modules:
+	- [scripts-user, always]
+	--//
+	Content-Type: text/x-shellscript; charset="us-ascii"
+	MIME-Version: 1.0
+	Content-Transfer-Encoding: 7bit
+	Content-Disposition: attachment; filename="userdata.txt"
+	#!/bin/bash
+	ufw disable
+	iptables -L
+	iptables -F
+	--//
+	 ```
+     - Save this and restart instance.
+     - Hopefully now you'll be able to connect with SSH.
+      
 # How to install putty in ubuntu
 install putty
 ```
