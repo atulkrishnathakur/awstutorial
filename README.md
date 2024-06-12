@@ -59,8 +59,6 @@
 	--//
 ```
        
-     - Save this and restart instance.
-     - Hopefully now you'll be able to connect with SSH.
       
 # How to install putty in ubuntu
 install putty
