@@ -121,7 +121,7 @@ $ putty
   - Password: NOTE-password input will be hide when you select Key File
   - Key File: browse .ppk file
   - Click on Ok button
-  - Click on Connect button
+  - Click on Connect button in Site manager
 - Now you will see connetion is successfull
 
 # how to install apache
