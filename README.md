@@ -111,6 +111,7 @@ $ putty
 - Go to file > Site Manager
 - A new Screen will be open
 - Click on New Site button
+- Enter Site name at top left corner or click rename button to rename site name and click on oK button
 - In General tab
   - Protocol: SFTP
   - Host: Host name or public IP address
@@ -119,7 +120,7 @@ $ putty
   - User: ubuntu (ubuntu is default user)
   - Password: NOTE-password input will be hide when you select Key File
   - Key File: browse .ppk file
-  - Click on Ok butto
+  - Click on Ok button
   - Click on Connect button
 - Now you will see connetion is successfull
 
