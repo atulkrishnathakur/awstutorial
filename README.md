@@ -115,7 +115,11 @@ $ putty
   - Protocol: SFTP
   - Host: Host name or public IP address
   - Port:22
+  - Logon Type: Key File
   - User: ubuntu (ubuntu is default user)
+  - Password: NOTE-password input will be hide when you select Key File
+  - Key File: browse .ppk file
+  - Click on Ok butto
   - Click on Connect button
 - Now you will see connetion is successfull
 
