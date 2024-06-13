@@ -63,14 +63,14 @@
      - Hopefully now you'll be able to connect with SSH. Now you can also connect from putty
       
 # How to install putty in ubuntu
-install putty
+install putty in your local machine
 ```
 sudo apt install putty
 
 ```
 
 # How to generage .ppk file
-run the below command 
+run the below command in your local machine
 $ sudo puttygen /path/filename.pem -o /path/file.ppk -O private
 
 ```
