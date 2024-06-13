@@ -112,12 +112,12 @@ $ putty
 - A new Screen will be open
 - Click on New Site button
 - In General tab
-  -Protocol: SFTP
-  -Host: Host name or public IP address
-  -Port:22
-  -User: ubuntu (ubuntu is default user)
-  -Click on Connect button
--Now you will see connetion is successfull
+  - Protocol: SFTP
+  - Host: Host name or public IP address
+  - Port:22
+  - User: ubuntu (ubuntu is default user)
+  - Click on Connect button
+- Now you will see connetion is successfull
 
 # how to install apache
 - before apache installation www directory not available in /var
