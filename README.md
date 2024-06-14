@@ -123,6 +123,13 @@ $ putty
   - Click on Ok button
   - Click on Connect button in Site manager
 - Now you will see connetion is successfull
+- Now you can also connect using quickconnect
+  - Host: enter hostname or public IP address
+  - Username: enter username like ubunut
+  - password: If you are using key file then you have not need to enter password. Or otherwise you have need to enter password
+  - Port:22
+  - Click on Quickconnect button
+
 
 # how to install apache
 - before apache installation www directory not available in /var
