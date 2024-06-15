@@ -493,7 +493,19 @@ server {
 # Install PostgreSQL Client
 ```
 :~$ sudo apt install postgresql-client
+
 ```
+# Connect RDS with EC2 instance
+- Click on instance id of ec2 instance
+- click on Action button
+  - click on networking
+    - Connect RDS database
+- A new screen Connect RDS Database will be open
+  - Database role: Instance
+  - RDS database: Search rds instance like testpostgresql
+  - click on RDS instance like testpostgresql
+  - Click on Connect button
+
 # Run rds PostgresSQL in terminal
 :~$ psql -h &lt;hostname&gt; -U &lt;user&gt;
 ```
