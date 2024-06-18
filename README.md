@@ -476,7 +476,7 @@ server {
    - Confirm Master Password:****
 7. Connectivity
    - Compute resource: Don’t connect to an EC2 compute resource
-   - Public access: No
+   - Public access: Yes
 8. Additional configuration:
    - Database port: 5432
 9. Database authentication
@@ -519,6 +519,16 @@ server {
   - RDS database: Search rds instance like testpostgresql
   - click on RDS instance like testpostgresql
   - Click on Connect button
+ - Now go to rds instance
+   - Click on security and connectivity tabs
+   - In security column click on VPS Security groups
+   - Click on security group ID
+   - Click on Inbound Rule
+   - Click on Edit Inbound Rule
+   - Click on Add Rule
+     - Type: search PostgreSQL
+     - Source: MyIP ( Automaticaly your IP address will be come but you can verify from https://whatismyipaddress.com/)
+     - Click on Save rules button
 
 # Run rds PostgresSQL in terminal
 :~$ psql -h &lt;hostname&gt; -U &lt;user&gt;
