@@ -61,7 +61,21 @@
 
      - Save this and restart instance.
      - Hopefully now you'll be able to connect with SSH. Now you can also connect from putty
-      
+
+
+# ec2 instance security group
+- click on instance ID
+- Click on Security tab
+- Click on Security Group Link
+- Click on Inbound Rules
+- Click on Edit Inbound Rules
+- Click on Add Rule button
+  - Type: search Custom TCP
+  - Port Range: 8080
+  - Source: Custom and search 0.0.0.0/0
+    
+
+
 # How to install putty in ubuntu
 install putty in your local machine
 ```
