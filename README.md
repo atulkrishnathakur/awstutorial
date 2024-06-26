@@ -527,8 +527,13 @@ server {
    - Click on Edit Inbound Rule
    - Click on Add Rule
      - Type: search PostgreSQL
-     - Source: MyIP ( Automaticaly your IP address will be come but you can verify from https://whatismyipaddress.com/)
+     - Source: Anywhere-IPv4 and search 0.0.0.0/0
      - Click on Save rules button
+   - Again Click on Add Rule
+     - Type: search PostgreSQL
+     - Source: Anywhere-IPv6 and search ::/0
+     - Click on Save rules button
+
 
 # Run rds PostgresSQL in terminal
 :~$ psql -h &lt;hostname&gt; -U &lt;user&gt;
